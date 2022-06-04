@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #292929;
+}
+
+/* Стили текстовых полей */
+
+textarea {
+  box-sizing: border-box;
+  background-color: #292929;
+  color: #ababab;
+  width: 95%;
+  height: 300px;
+  font-size: 1.7em;
+}
+
+.text {
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 6px;
+  flex-basis: 80%;
+  height: 55px;
+  overflow: hidden;
+}
+
+.read {
+  box-sizing: border-box;
+  flex-basis: 80%;
+  height: 300px;
+  overflow: scroll;
+}
+
+/* Стиль поля для статей */
+
+.field {
+  display: flex;
+  padding: 10px;
+  width: 90%;
+  margin-left: 5%;
+  color: #ababab;
+  font-size: 1.3em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Стили окон для статей */
+
+.box /* Обычное */ {
+  box-sizing: border-box;
+  border: 2px solid #3b0000;
+  border-radius: 10px;
+  background-color: #212121;
+  padding: 10px;
+  flex-basis: 25%;
+  margin-left: 6.25%;
+  margin-top: 35px;
+  transition: transform 500ms ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.active /* Чтение + Редактирование */ {
+  box-sizing: border-box;
+  flex-basis: 87.5%;
+  margin-left: 6.25%;
+}
+
+.box:last-child {
+  margin-bottom: 0;
+}
+
+/* Стили кнопок */
+
+.btn {
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.65em;
+  color: #fff;
+  outline: none;
+  border-radius: 10px;
+  transition: background-color 500ms ease;
+  transition: border 1000ms ease;
+}
+
+.btn.light, .btn.success {
+  background-color: #251f57;
+  border: 2px solid #201c4d;
+}
+
+.btn.red {
+  background-color: #4d1c1c;
+  border: 2px solid #4d1c1c;
+}
+
+.btn.new {
+  background-color: #2e5c22;
+  border: 2px solid #172b11;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.btn.light:hover, .btn.success:hover {
+  background-color: #2a89a2;
+  border-color: #1d6f85;
+}
+
+.btn.red:hover {
+  background-color: #b6821a;
+  border-color: #946912;
+}
+
+.btn.new:hover {
+  background-color: #44ab2b;
+  border-color: #335929;
+}
